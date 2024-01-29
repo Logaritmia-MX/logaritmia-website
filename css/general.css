@@ -1,0 +1,171 @@
+:root {
+    --color-logaritmia-1: #48c3cf;
+    --color-logaritmia-2: #3ca2ab;
+    --color-logaritmia-3: #adcf48;
+    --color-logaritmia-4: #a448cf;
+    --color-logaritmia-5: #cf4895;
+    --black: #191919;
+    --white-text: #fafafa;
+    --grey-text: #3d3d3d;
+    --black-text: rgba(0, 0, 0, 0.8);
+    --text-width: 39rem;
+}
+
+* {
+    color: var(--white-text);
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+html {
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    max-width: var(--text-width);
+}
+
+h4, h5, h6 {
+    font-weight: 400;
+}
+
+p, a, input, button, li, textarea, select, datalist, td, th {
+    font-size: 1rem;
+}
+
+button, .btn {
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+
+.paragraph, textarea, li {
+    line-height: 1.5;
+    text-align: justify;
+    max-width: var(--text-width);
+    margin: 0 auto;
+}
+
+textarea, select, datalist, input[type=email], input[type=password], input[type=tel], input[type=text], input[type=date], input[type=number] {
+    color: var(--black-text);
+    background-color: var(--white-text);
+    padding: 0.3rem 0.5rem;
+    border-radius: 1px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.35rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+footer {
+   min-height: 50vh;
+   padding-top: 2.5rem;
+}
+
+header {
+    padding: 3rem 0;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.centre {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.dark-font {
+    color: var(--black-text);
+}
+
+.error {
+    color: #f00;
+    font-size: 0.95rem;;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.light-font {
+    color: var(--white-text);
+}
+
+.link {
+    font-weight: 400;
+    color: #00bfff;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.transparent {
+    opacity: 0.5;
+}
+
+.paragraph {
+    margin-bottom: 1em;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    .centre {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 2016px) {
+    html {
+        font-size: 36px;
+    }
+
+    .centre {
+        max-width: 2000px;
+    }
+}
