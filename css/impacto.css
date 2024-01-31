@@ -10,7 +10,17 @@
 }
 
 .title-impacto{
-    
+    display: grid;
+    place-content: center;
+    margin: 1rem;
 }
 
-.imagen
+.imagen-classroom{
+    width: 50% 100%;
+}
+
+.titimpac{
+   color:  
+    
+    
+    
