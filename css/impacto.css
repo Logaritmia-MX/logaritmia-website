@@ -1,1 +1,10 @@
+.header{
+    background-color:var(--color-logaritmia-1);
+    display: flex;
+    justify-content: flex-end;
+}
 
+.header-item{
+    padding: 0.5rem 1rem;
+    color: var(--white-text);
+}
