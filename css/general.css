@@ -48,7 +48,7 @@
 
 * {
     color: var(--white-text);
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Gothic', Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -204,3 +204,94 @@ section {
         max-width: 2000px;
     }
 }
+
+/****************************************
+*                                       *
+*                 Navbar                *
+*                                       *
+*****************************************/
+
+nav {
+    background-color: var(--color-logaritmia-1);
+}
+
+.nav-grid {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+}
+
+nav a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+a.btn-link {
+    display: block;
+    margin: 0 1rem;
+}
+
+nav .btn-link:hover {
+    text-decoration: underline;
+}
+
+#hamburguer-menu {
+    display: none;
+}
+
+#nav-schedule {
+    background-color: var(--color-logaritmia-4);
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+}
+
+#link-logo img {
+    box-sizing: border-box;
+    display: block;
+    height: 3rem;
+    width: auto;
+    padding: 0.5rem 0
+}
+
+@media screen and (max-width: 850px) {
+    .nav-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0;
+    }
+
+    a.btn-link, #nav-schedule {
+        background-color: var(--color-logaritmia-1);
+        text-align: center;
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: 2px solid #fff;
+        margin: 0;
+    }
+
+    #hamburguer-menu {
+        display: block;
+    }
+
+    #link-logo {
+        justify-content: space-between;
+    }
+
+    #nav-schedule {
+        background-color: var(--color-logaritmia-4);
+        border-radius: 0;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    #link-logo a, #link-logo label {
+        margin: 0 1rem;
+    }
+
+    #checkbox-menu:checked ~ #nav-links {
+        display: block;
+    }
+  }
