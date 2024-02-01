@@ -126,6 +126,7 @@ section {
     font-size: 1.1rem;
     font-weight: 500;
     background-color: var(--color-logaritmia-2);
+    width: 20rem;
     padding: 1.5rem 3rem;
     border-radius: 10px;
 }
