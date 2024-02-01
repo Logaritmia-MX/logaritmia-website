@@ -217,6 +217,9 @@ section {
 
 nav {
     background-color: var(--color-logaritmia-1);
+    width: 100%;
+    position: relative;
+    z-index: 100;
 }
 
 .nav-grid {
@@ -259,10 +262,18 @@ nav .btn-link:hover {
 }
 
 @media screen and (max-width: 850px) {
+    nav {
+        position: fixed;
+    }
+
     .nav-grid {
         display: grid;
         grid-template-columns: 100%;
         margin: 0;
+    }
+    .nav-mobile-space {
+        height: 3rem;
+        display: block;
     }
 
     a.btn-link, #nav-schedule {
