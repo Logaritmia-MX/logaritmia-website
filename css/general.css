@@ -114,17 +114,20 @@ h6 {
     font-size: 1.2rem;
 }
 
-footer {
-   min-height: 50vh;
-   padding-top: 2.5rem;
-}
-
 header {
     padding: 3rem 0;
 }
 
 section {
     padding: 5rem 0;
+}
+
+.btn-schedule {
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: var(--color-logaritmia-2);
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
 }
 
 .centre {
@@ -295,3 +298,29 @@ nav .btn-link:hover {
         display: block;
     }
   }
+
+/****************************************
+*                                       *
+*                 Footer                *
+*                                       *
+*****************************************/
+
+footer {
+    background-color: var(--color-logaritmia-2);
+    min-height: 50vh;
+    padding-top: 2.5rem;
+ }
+
+ footer a {
+    margin: 0.5rem 1rem;
+ }
+
+ @media screen and (max-width: 410px) {
+    .site-map {
+        display: block;
+    }
+
+    .site-map a {
+        display: block;
+    }
+ }

@@ -1,0 +1,77 @@
+/****************************************
+*                                       *
+*                 Header                *
+*                                       *
+*****************************************/
+
+h1 {
+    color: var(--color-logaritmia-1);
+    font-weight: 400;
+}
+
+header {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #fff;
+    height: calc(100vh - 3rem);
+    max-height: 100vw;
+    padding: 0;
+}
+
+.logaritmia-background {
+    grid-area: 1 / 1 / 7 / 2;
+    background-image: url(../img/logaritmia/fondo_logaritmia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome-container {
+    display: flex;
+    align-self: end;
+    justify-content: center;
+    grid-area: 1 / 1 / 7 / 2;
+}
+
+.welcome-text-card {
+    background-color: #fff;
+    width: 35%;
+    padding: 1rem 2rem;
+}
+
+.welcome-container img {
+    height: 4rem;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.welcome-container .paragraph {
+    color: var(--black-text);
+}
+
+@media screen and (max-width: 1016px) {
+    .welcome-container {
+        margin: 0 auto;
+    }
+
+    .welcome-text-card {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .welcome-container {
+        grid-area: 1 / 1 / 11 / 2;
+        align-self: start;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        height: auto;
+        max-height: none;
+    }
+
+    .welcome-text-card {
+        width: auto;
+    }
+}
