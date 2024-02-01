@@ -11,7 +11,7 @@
 
 .title-impacto{
     display: grid;
-    place-content: center;
+    place-items: center;
     margin: 1rem;
 }
 
@@ -19,8 +19,24 @@
     width: 50% 100%;
 }
 
-.titimpac{
-   color:  
+.titcolor{
+   color: color-logaritmia-1;
+}
+
+.contenedor1{
+    color: color-logaritmia-3;
+    place-items: center;
+}
+
+.text-ver{
+     font-size: 3rem;
+     color: black
+}
+
+.
+    
+
+    
     
     
     
