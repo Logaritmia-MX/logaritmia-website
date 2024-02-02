@@ -9,32 +9,24 @@ h1 {
 }
 
 header {
-    display: grid;
-    grid-template-rows: repeat(10, 1fr);
-    background-color: #fff;
-    height: calc(100vh - 3rem);
-    max-height: 100vw;
-    padding: 0;
-}
-
-.logaritmia-background {
-    grid-area: 1 / 1 / 7 / 2;
     background-image: url(../img/logaritmia/fondo_logaritmia.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.welcome-container {
-    display: flex;
-    align-self: end;
-    justify-content: center;
-    grid-area: 1 / 1 / 7 / 2;
+    position: relative;
+    max-height: 100vw;
+    padding: 0;
+    margin-bottom: 5rem;
 }
 
 .welcome-text-card {
     background-color: #fff;
-    width: 35%;
-    padding: 1rem 2rem;
+    box-sizing: border-box;
+    width: 70%;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 1.5rem 3rem;
+    position: relative;
+    bottom: -4rem;
 }
 
 .welcome-container img {
@@ -43,41 +35,35 @@ header {
     margin-bottom: 1rem;
 }
 
-.welcome-container .paragraph {
+.welcome-text-card .btn-schedule {
+    width: 70%;
+    padding: 1.5rem;
+}
+
+.welcome-text-card .paragraph {
     color: var(--black-text);
 }
 
-@media screen and (max-width: 1016px) {
-    .welcome-container {
-        margin: 0 auto;
-    }
-
-    .welcome-text-card {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 590px) {
-    .welcome-container {
-        grid-area: 1 / 1 / 11 / 2;
-        align-self: start;
+@media screen and (max-width: 735px) {
+    .welcome-text-card .btn-schedule {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 450px) {
     header {
-        height: auto;
-        max-height: none;
+        margin-bottom: 25vh;
     }
 
     .welcome-text-card {
-        width: auto;
+        min-width: 100%;
+        padding: 2rem;
     }
 }
 
 /****************************************
 *                                       *
-*                 Header                *
+*                Benefits               *
 *                                       *
 *****************************************/
 
@@ -99,12 +85,9 @@ header {
     min-height: 2rem;
 }
 
-#benefits {
-    padding-top: 0;
-}
-
 #benefits h2 {
     color: var(--color-logaritmia-1);
+    margin-bottom: 1.5rem;
 }
 
 .benefits-card-container div:nth-of-type(1) h3 {
