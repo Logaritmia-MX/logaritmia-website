@@ -1,0 +1,201 @@
+/****************************************
+*                                       *
+*                 Header                *
+*                                       *
+*****************************************/
+
+h1 {
+    color: var(--color-logaritmia-5);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    width: 70%;
+    z-index: 10;
+}
+
+header {
+    position: relative;
+    padding: 0;
+}
+
+header img {
+    width: 30%;
+    margin: 0
+}
+
+.header-content {
+    justify-content: space-between;
+}
+
+#diffused-background {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0));
+    right: 15%;
+}
+
+@media screen and (max-width: 635px) {
+    h1 {
+        margin: 1rem auto;
+        font-size: 3rem;
+        width: auto;
+    }
+
+    header img {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+    }
+
+    .header-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #diffused-background {
+        display: none;
+    }
+}
+
+/****************************************
+*                                       *
+*             Differentiator            *
+*                                       *
+*****************************************/
+
+#differentiator {
+    padding: 3rem 0;
+}
+
+#differentiator h2 {
+    background-color: var(--color-logaritmia-3);
+    width: 50%;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 635px) {
+    #differentiator h2 {
+        width: 80%;
+    }
+}
+
+/****************************************
+*                                       *
+*            Grades & content           *
+*                                       *
+*****************************************/
+
+.grade-card {
+    width: 30%;
+    min-width: 290px;
+    background-color: rgba(200, 200, 200, 0.1);
+    margin: 1.5rem 1rem;
+}
+
+.grade-cards-container {
+    margin: 1.5rem auto;
+}
+
+.grade-card h4 {
+    padding: 0.5rem;
+}
+
+.grade-card li {
+    color: var(--black-text);
+    text-align: left;
+}
+
+.grade-card ul {
+    padding: 0.75rem;
+}
+
+.grade-cards-container .grade-card:nth-of-type(1) h4 {
+    background-color: var(--color-logaritmia-5);
+}
+
+.grade-cards-container .grade-card:nth-of-type(2) h4 {
+    background-color: var(--color-logaritmia-3);
+}
+
+.grade-cards-container .grade-card:nth-of-type(3) h4 {
+    background-color: var(--color-logaritmia-1);
+}
+
+.grade-cards-container .grade-card:nth-of-type(4) h4 {
+    background-color: var(--color-logaritmia-4);
+}
+
+#grades-content h3 {
+    color: var(--black-text);
+    text-align: left;
+}
+
+/****************************************
+*                                       *
+*              Motivations              *
+*                                       *
+*****************************************/
+
+.motivations-container div {
+    padding: 1.5rem 0;
+}
+
+.motivations-container h2 {
+    text-align: left;
+    margin: 2rem 1rem;
+}
+
+.motivations-container img {
+    width: 30%;
+    min-width: 300px;
+}
+
+.motivations-container .centre {
+    display: flex;
+    align-items: center;
+}
+
+#motivations .motivations-container > div:nth-of-type(1) {
+    background-color: var(--color-logaritmia-4);
+}
+
+#motivations .motivations-container > div:nth-of-type(2) {
+    background-color: var(--color-logaritmia-3);
+}
+
+#motivations .motivations-container > div:nth-of-type(3) {
+    background-color: var(--color-logaritmia-2);
+}
+
+@media screen and (max-width: 635px) {
+    .motivations-container h2 {
+        width: 85%;
+        margin: 2rem auto;
+    }
+
+    .motivations-container img {
+        width: 85%;
+    }
+
+    .motivations-container .centre {
+        display: block;
+    }
+}
+
+/****************************************
+*                                       *
+*            Schedule meeting           *
+*                                       *
+*****************************************/
+
+#schedule-meeting h2 {
+    color: var(--color-logaritmia-5);
+    margin-bottom: 3rem;
+}
+
+#schedule-meeting .btn-schedule {
+    background-color: var(--color-logaritmia-5);
+    border-color: var(--color-logaritmia-5);
+}
+
+#schedule-meeting .btn-schedule:hover {
+    color: var(--color-logaritmia-5);
+}
