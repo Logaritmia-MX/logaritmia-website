@@ -60,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
     max-width: var(--text-width);
 }
 
+h1, h2, h3 {
+    font-weight: 500;
+}
+
 h4, h5, h6 {
     font-weight: 400;
 }
@@ -126,9 +130,16 @@ section {
     font-size: 1.1rem;
     font-weight: 500;
     background-color: var(--color-logaritmia-2);
-    width: 20rem;
+    box-sizing: border-box;
+    width: 21rem;
     padding: 1.5rem 3rem;
+    border: 2px solid var(--color-logaritmia-2);;
     border-radius: 10px;
+}
+
+.btn-schedule:hover {
+    color: var(--color-logaritmia-2);
+    background-color: #fff !important;
 }
 
 .centre {
