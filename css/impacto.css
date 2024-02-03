@@ -1,42 +1,113 @@
 .header{
-    background-color:var(--color-logaritmia-1);
-    display: flex;
-    justify-content: flex-end;
+     background-color:var(--color-logaritmia-1);
+     display: flex;
+     justify-content: flex-end;
 }
 
 .header-item{
-    padding: 0.5rem 1rem;
-    color: var(--white-text);
+     padding: 0.5rem 1rem;
+     color: var(--white-text);
 }
 
-.title-impacto{
-    display: grid;
-    place-items: center;
-    margin: 1rem;
+.parte1-impacto{
+     text-align: center;
+     position: relative;
 }
 
 .imagen-classroom{
-    width: 50% 100%;
+     width: 100%;
 }
 
 .titcolor{
-   color: color-logaritmia-1;
+     color:#3CA2AB;
+     position:absolute;
+     top: 20%;
+     left:35%;
+     text-align: center;
+}
+
+.logo{
+     width: 200px;
+     position:absolute;
+     top: 50%;
+     left:35%;
+     align-self: center;
 }
 
 .contenedor1{
-    color: color-logaritmia-3;
-    place-items: center;
+     background-color:var(--color-logaritmia-3);
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     align-items: center;
 }
 
 .text-ver{
      font-size: 3rem;
-     color: black
+     color: black;
+     text-align: center;
+     padding: .5rem 1rem;
+     margin-bottom: 2rem;
 }
 
-.
-    
+.text-ne{
+     color: black;
+     text-align: center;
+     
 
-    
-    
+}
+
+.mismalinea{
+    display: flex;
+}
+
+.contenedor2{
+     background-color:#A448CF; 
+     place-items: center;
+     height: 8cm;
+     width: 50%;
+     display: flex;
+}
+
+.contenedor3{
+     background-color:#CF4895; 
+     place-items: center;
+     height: 8cm;
+     width: 50%;
+     display: flex;
+}
+
+.contproba{
+    background-color:var(--color-logaritmia-2) ;
+    width: 100%;
+}
+
+.titpart{
+    color: black;
+}
+
+.text-prob{
+    color: black;
+}
+
+.contcode{
+    background-color:var(--color-logaritmia-1);
+    width: 100%;
+}
+
+.pie{
+     background-color:var(--color-logaritmia-2);
+     display: flex;
+     justify-content: center;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+}
+
+.pie-item{
+     padding: 0.5rem 1rem;
+     color: var(--white-text);
+}
+
+
     
     
