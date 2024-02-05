@@ -1,0 +1,292 @@
+/****************************************
+*                                       *
+*                 History               *
+*                                       *
+*****************************************/
+
+h1 {
+    color: var(--color-logaritmia-3);
+    text-align: left;
+}
+
+#history img {
+    width: 30%;
+    margin-left: 1.5rem;
+}
+
+#history .paragraph {
+    color: var(--black-text);
+}
+
+#history .flexbox div {
+    width: calc(70% - 1.5rem);
+}
+
+@media screen and (max-width: 870px) {
+    #history .flexbox div {
+        width: 100%;
+    }
+
+    #history img {
+        width: clamp(300px, 100%, var(--text-width));
+        margin-left: auto;
+    }
+}
+
+/****************************************
+*                                       *
+*               How it works            *
+*                                       *
+*****************************************/
+
+.title-container {
+    background-color: var(--color-logaritmia-1);
+    padding: 2rem 0;
+}
+
+.methodology-steps {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin-top: 3rem;
+}
+
+.methodology-steps li {
+    color: var(--black-text);
+    list-style: none;
+    text-align: center;
+}
+
+#how-it-works .line-decoration {
+    background-color: var(--color-logaritmia-2);
+    height: 0.2rem;
+    width: 20%;
+}
+
+#how-it-works .numeration {
+    --num-diameter: 4rem;
+    display: flex;
+    background-color: var(--color-logaritmia-2);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: var(--num-diameter);
+    height: var(--num-diameter);
+    border-radius: 50%;
+}
+
+#how-it-works .numeration p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#how-it-works .methodology-steps div:nth-of-type(1) {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#how-it-works .methodology-steps div:nth-of-type(2) {
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+#how-it-works .methodology-steps div:nth-of-type(3) {
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
+#how-it-works .methodology-steps div:nth-of-type(4) {
+    grid-area: 1 / 4 / span 1 / span 1;
+}
+
+#how-it-works .methodology-steps div:nth-of-type(5) {
+    grid-area: 1 / 5 / span 1 / span 1;
+}
+
+#how-it-works .methodology-steps div:nth-of-type(6) {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+#how-it-works .methodology-steps div:nth-of-type(7) {
+    grid-area: 1 / 2 / span 1 / span 2;
+}
+
+#how-it-works .methodology-steps div:nth-of-type(8) {
+    grid-area: 1 / 3 / span 1 / span 2;
+}
+
+#how-it-works .methodology-steps div:nth-of-type(9) {
+    grid-area: 1 / 4 / span 1 / span 2;
+}
+
+@media screen and (max-width: 630px) {
+    .methodology-steps {
+        grid-template-columns: 4rem 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 3rem 1rem;
+    }
+
+    .methodology-steps li {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    #how-it-works .line-decoration {
+        transform: rotate(90deg);
+        width: 2.3rem;
+    }
+
+    #how-it-works .methodology-steps div:nth-of-type(1) {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    
+    #how-it-works .methodology-steps div:nth-of-type(2) {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    
+    #how-it-works .methodology-steps div:nth-of-type(3) {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+    
+    #how-it-works .methodology-steps div:nth-of-type(4) {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+    
+    #how-it-works .methodology-steps div:nth-of-type(5) {
+        grid-area: 5 / 1 / span 1 / span 1;
+    }
+    
+    #how-it-works .methodology-steps div:nth-of-type(6) {
+        grid-area: 1 / 1 / span 2 / span 1;
+    }
+    
+    #how-it-works .methodology-steps div:nth-of-type(7) {
+        grid-area: 2 / 1 / span 2 / span 1;
+    }
+    
+    #how-it-works .methodology-steps div:nth-of-type(8) {
+        grid-area: 3 / 1 / span 2 / span 1;
+    }
+    
+    #how-it-works .methodology-steps div:nth-of-type(9) {
+        grid-area: 4 / 1 / span 2 / span 1;
+    }
+}
+
+/****************************************
+*                                       *
+*                   STEAM               *
+*                                       *
+*****************************************/
+
+.steam-acronym {
+    justify-content: space-between;
+    max-width: var(--text-width);
+    margin: 0 auto;
+}
+
+#steam p, .steam-acronym h3 {
+    color: var(--black-text);
+}
+
+.steam-acronym h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.steam-acronym img {
+    margin: 1.5rem 0;
+    width: 45%;
+}
+
+.steam-acronym span {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.steam-acronym h3:nth-of-type(1) span {
+    color: var(--color-logaritmia-5);
+}
+
+.steam-acronym h3:nth-of-type(2) span {
+    color: var(--color-logaritmia-4);
+}
+
+.steam-acronym h3:nth-of-type(3) span {
+    color: var(--color-logaritmia-3);
+}
+
+.steam-acronym h3:nth-of-type(4) span {
+    color: var(--color-logaritmia-2);
+}
+
+.steam-acronym h3:nth-of-type(5) span {
+    color: var(--color-logaritmia-1);
+}
+
+#steam h2 {
+    color: var(--color-logaritmia-3);
+    text-align: left;
+}
+
+@media screen and (max-width: 870px) {
+    .steam-acronym img {
+        margin: 1.5rem auto;
+        width: 100%;
+    }
+}
+
+/****************************************
+*                                       *
+*               Social impact           *
+*                                       *
+*****************************************/
+
+.impact-description-container {
+    align-items: start;
+}
+
+.impact-description-container h2 {
+    color: var(--color-logaritmia-5);
+    text-align: left;
+}
+
+.impact-description-container div {
+    width: 55%;
+}
+
+.impact-description-container img {
+    width: 40%;
+    margin: 0;
+}
+
+.impact-description-container .paragraph {
+    color: var(--black-text);
+}
+
+#social-impact .btn-schedule {
+    background-color: var(--color-logaritmia-5);
+    border-color: var(--color-logaritmia-5);
+    width: auto;
+    margin: 2rem auto;
+}
+
+#social-impact .btn-schedule:hover {
+    color: var(--color-logaritmia-5);
+}
+
+@media screen and (max-width: 840px) {
+    .impact-description-container {
+        flex-direction: column-reverse;
+    }
+
+    .impact-description-container div {
+        width: 100%;
+    }
+
+    .impact-description-container img {
+        max-width: var(--text-width);
+        width: 100%;
+        margin: 0 auto;
+    }
+}
