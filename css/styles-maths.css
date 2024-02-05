@@ -91,6 +91,7 @@ header img {
 }
 
 .grade-cards-container {
+    align-items: stretch;
     margin: 1.5rem auto;
 }
 

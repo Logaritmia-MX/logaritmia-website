@@ -44,6 +44,7 @@
     --grey-text: #3d3d3d;
     --black-text: rgba(0, 0, 0, 0.8);
     --text-width: 39rem;
+    --navbar-height: 3rem;
 }
 
 * {
@@ -57,6 +58,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    text-align: center;
     max-width: var(--text-width);
 }
 
@@ -70,14 +72,6 @@ h4, h5, h6 {
 
 p, a, input, button, li, textarea, select, datalist, td, th {
     font-size: 1rem;
-}
-
-button, .btn {
-    text-align: center;
-    cursor: pointer;
-    box-sizing: border-box;
-    display: block;
-    margin: 0 auto;
 }
 
 .paragraph, textarea, li {
@@ -126,11 +120,18 @@ section {
     padding: 5rem 0;
 }
 
+button, .btn, .btn-schedule {
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+
 .btn-schedule {
     font-size: 1.1rem;
     font-weight: 500;
     background-color: var(--color-logaritmia-2);
-    box-sizing: border-box;
     width: 21rem;
     padding: 1.5rem 3rem;
     border: 2px solid var(--color-logaritmia-2);;
@@ -236,7 +237,7 @@ nav {
 .nav-grid {
     display: flex;
     justify-content: space-between;
-    height: 3rem;
+    height: var(--navbar-height);
 }
 
 nav a {
@@ -267,7 +268,7 @@ nav .btn-link:hover {
 #link-logo img {
     box-sizing: border-box;
     display: block;
-    height: 3rem;
+    height: var(--navbar-height);
     width: auto;
     padding: 0.5rem 0
 }
@@ -283,7 +284,7 @@ nav .btn-link:hover {
         margin: 0;
     }
     .nav-mobile-space {
-        height: 3rem;
+        height: var(--navbar-height);
         display: block;
     }
 
