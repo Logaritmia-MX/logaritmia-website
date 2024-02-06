@@ -35,6 +35,14 @@ header {
     margin-bottom: 1rem;
 }
 
+.progress-dots div {
+    background-color: var(--color-logaritmia-1);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+
 .welcome-text-card .btn-schedule {
     width: 70%;
     padding: 1.5rem;
@@ -138,12 +146,60 @@ header {
 *                                       *
 *****************************************/
 
+.carousel-controls {
+    margin: 1rem auto;
+}
+
+.methodology-carousel {
+    display: flex;
+    overflow: hidden;
+}
+
 .methodology-step {
-    padding: 3rem 0;
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+    min-height: 420px;
+    height: 25vh;
+    min-width: 100vw;
+    transition: transform 400ms ease-out;
 }
 
 .methodology-step h4 {
     margin: 2.5rem auto 1rem;
+}
+
+#methodology-step-1 {
+    background-color: var(--color-logaritmia-5);
+}
+
+#methodology-step-2 {
+    background-color: var(--color-logaritmia-4);
+}
+
+#methodology-step-3 {
+    background-color: var(--color-logaritmia-3);
+}
+
+#methodology-step-4 {
+    background-color: var(--color-logaritmia-2);
+}
+
+#methodology-step-5 {
+    background-color: var(--color-logaritmia-1);
+}
+
+#prev-methodology-step,
+#next-methodology-step {
+    background-color: var(--color-logaritmia-1);
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+#prev-methodology-step:disabled,
+#next-methodology-step:disabled {
+    opacity: 0.5;
 }
 
 #how-it-works h2 {
@@ -151,8 +207,8 @@ header {
     padding-bottom: 2rem;
 }
 
-#methodology-step-1 {
-    background-color: var(--color-logaritmia-5);
+#next-methodology-step img {
+    transform: rotate(180deg);
 }
 
 /****************************************
