@@ -1,0 +1,110 @@
+header {
+    background-image: url(../img/impact/classroom.jpg);
+    background-size: cover;
+    background-position: 50% 100%;
+    height: calc(100vh - var(--navbar-height));
+    max-height: 100vw;
+}
+
+h1 {
+    color: var(--color-logaritmia-1);
+    font-size: 5rem;
+}
+
+header img {
+    max-width: var(--text-width);
+}
+
+.two-columns {
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.text-content h3, .text-content h4 {
+    text-align: left;
+}
+
+.text-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.two-columns div {
+    width: 48%;
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .project-titles {
+        display: none;
+    }
+
+    .two-columns div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .two-columns img {
+        width: 100%;
+        max-width: var(--text-width);
+    }
+
+    #gauss-galois .flexbox, #una-probadita .flexbox {
+        flex-direction: column-reverse;
+    }
+}
+
+.project-titles h2 {
+    max-width: 500px;
+}
+
+.project-titles div {
+    width: 50%;
+    padding: 5rem 0;
+}
+
+.project-titles div:nth-of-type(1) {
+    background-color: var(--color-logaritmia-4);
+}
+
+.project-titles div:nth-of-type(2) {
+    background-color: var(--color-logaritmia-5);
+}
+
+.project-titles div:nth-of-type(1) h2 {
+    margin-right: 0;
+}
+
+.project-titles div:nth-of-type(2) h2 {
+    margin-left: 0;
+}
+
+@media screen and (min-width: 2016px) {
+    .project-titles h2 {
+        max-width: 1000px;
+    }
+}
+
+#una-probadita {
+    background-color: var(--color-logaritmia-2);
+}
+
+#code-it {
+    background-color: var(--color-logaritmia-1);
+}
+
+#impact {
+    background-color: var(--color-logaritmia-4);
+}
+
+#gauss-galois {
+    background-color: var(--color-logaritmia-3);
+}
+
+#social-responsibility {
+    background-color: var(--color-logaritmia-3);
+}
+
+#social-responsibility .paragraph {
+    font-size: 1.5rem;
+}

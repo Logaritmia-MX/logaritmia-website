@@ -1,0 +1,241 @@
+/****************************************
+*                                       *
+*                 Header                *
+*                                       *
+*****************************************/
+
+h1 {
+    color: var(--color-logaritmia-1);
+}
+
+header {
+    background-image: url(../img/logaritmia/fondo_logaritmia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-height: 100vw;
+    padding: 0;
+    margin-bottom: 5rem;
+}
+
+.welcome-text-card {
+    background-color: var(--logaritmia-white);
+    box-sizing: border-box;
+    width: 70%;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 1.5rem 3rem;
+    position: relative;
+    bottom: -4rem;
+}
+
+.welcome-text-card img {
+    height: 8rem;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.progress-dots div {
+    background-color: var(--color-logaritmia-1);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+
+.welcome-text-card .btn-schedule {
+    width: 70%;
+    padding: 1.5rem;
+}
+
+.welcome-text-card .paragraph {
+    color: var(--black-text);
+}
+
+@media screen and (max-width: 860px) {
+    .welcome-text-card img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .welcome-text-card .btn-schedule {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    header {
+        margin-bottom: 25vh;
+    }
+
+    .welcome-text-card {
+        min-width: 100%;
+        padding: 2rem;
+    }
+}
+
+/****************************************
+*                                       *
+*                Benefits               *
+*                                       *
+*****************************************/
+
+.benefit-bullet {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: 1.5rem 0;
+}
+
+.benefit-bullet h3 {
+    text-align: left;
+    margin-left: 0;
+}
+
+.benefit-bullet svg {
+    width: 2rem;
+    min-width: 2rem;
+    height: 2rem;
+    min-height: 2rem;
+}
+
+#benefits h2 {
+    color: var(--color-logaritmia-1);
+    margin-bottom: 1.5rem;
+}
+
+.benefits-card-container div:nth-of-type(1) h3 {
+    color: var(--color-logaritmia-4);
+}
+
+.benefits-card-container div:nth-of-type(1) .pencil-icon {
+    fill: var(--color-logaritmia-4);
+}
+
+.benefits-card-container div:nth-of-type(2) h3 {
+    color: var(--color-logaritmia-3);
+}
+
+.benefits-card-container div:nth-of-type(2) .pencil-icon {
+    fill: var(--color-logaritmia-3);
+}
+
+.benefits-card-container div:nth-of-type(3) h3 {
+    color: var(--color-logaritmia-2);
+}
+
+.benefits-card-container div:nth-of-type(3) .pencil-icon {
+    fill: var(--color-logaritmia-2);
+}
+
+.benefits-card-container div:nth-of-type(4) h3 {
+    color: var(--color-logaritmia-5);
+}
+
+.benefits-card-container div:nth-of-type(4) .pencil-icon {
+    fill: var(--color-logaritmia-5);
+}
+
+@media screen and (max-width: 600px) {
+    .benefit-bullet {
+        width: 90%;
+    }
+
+    .benefit-bullet h3 {
+        margin-left: 0;
+    }
+}
+
+/****************************************
+*                                       *
+*              How it works             *
+*                                       *
+*****************************************/
+
+.carousel-controls {
+    margin: 1rem auto;
+}
+
+.methodology-carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.methodology-step {
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+    min-height: 420px;
+    height: 25vh;
+    min-width: 100vw;
+    transition: transform 400ms ease-out;
+}
+
+.methodology-step h4 {
+    margin: 2.5rem auto 1rem;
+}
+
+#methodology-step-1 {
+    background-color: var(--color-logaritmia-5);
+}
+
+#methodology-step-2 {
+    background-color: var(--color-logaritmia-4);
+}
+
+#methodology-step-3 {
+    background-color: var(--color-logaritmia-3);
+}
+
+#methodology-step-4 {
+    background-color: var(--color-logaritmia-2);
+}
+
+#methodology-step-5 {
+    background-color: var(--color-logaritmia-1);
+}
+
+#prev-methodology-step,
+#next-methodology-step {
+    background-color: var(--color-logaritmia-1);
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+#prev-methodology-step:disabled,
+#next-methodology-step:disabled {
+    opacity: 0.5;
+}
+
+#how-it-works h2 {
+    color: var(--color-logaritmia-1);
+    padding-bottom: 2rem;
+}
+
+#methodology-step-4 p {
+    text-align: center;
+}
+
+#next-methodology-step img {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+    #methodology-step-4 p {
+        text-align: justify;
+    }
+}
+
+/****************************************
+*                                       *
+*            Schedule meeting           *
+*                                       *
+*****************************************/
+
+#schedule-meeting h2 {
+    color: var(--color-logaritmia-1);
+    margin-bottom: 3rem;
+}

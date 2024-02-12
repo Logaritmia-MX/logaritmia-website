@@ -1,20 +1,96 @@
+@font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 100;
+    src: url(fonts/arima/Arima-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/gothic_a1/GothicA1-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/arima/Arima-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/arima/Arima-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/arima/Arima-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Gothic';
+    font-style: normal;
+    font-weight: 100;
+    src: url(fonts/gothic_a1/GothicA1-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Gothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/gothic_a1/GothicA1-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/gothic_a1/GothicA1-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Gothic';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/gothic_a1/GothicA1-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/gothic_a1/GothicA1-Bold.ttf);
+}
+
 :root {
     --color-logaritmia-1: #48c3cf;
     --color-logaritmia-2: #3ca2ab;
     --color-logaritmia-3: #adcf48;
     --color-logaritmia-4: #a448cf;
     --color-logaritmia-5: #cf4895;
+    --logaritmia-white: #faf2e9;
     --black: #191919;
-    --white-text: #fafafa;
+    --white-text: #faf2e9;
     --grey-text: #3d3d3d;
-    --black-text: rgba(0, 0, 0, 0.8);
+    --black-text: #272727;
     --text-width: 39rem;
+    --navbar-height: 3rem;
 }
 
 * {
     color: var(--white-text);
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Gothic', Helvetica, Arial, sans-serif;
     font-weight: 300;
+}
+
+body {
+    background-color: var(--logaritmia-white);
 }
 
 html {
@@ -22,7 +98,13 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arima', Arial, Helvetica, sans-serif;
+    text-align: center;
     max-width: var(--text-width);
+}
+
+h1, h2, h3 {
+    font-weight: 500;
 }
 
 h4, h5, h6 {
@@ -31,14 +113,6 @@ h4, h5, h6 {
 
 p, a, input, button, li, textarea, select, datalist, td, th {
     font-size: 1rem;
-}
-
-button, .btn {
-    text-align: center;
-    cursor: pointer;
-    box-sizing: border-box;
-    display: block;
-    margin: 0 auto;
 }
 
 .paragraph, textarea, li {
@@ -79,17 +153,35 @@ h6 {
     font-size: 1.2rem;
 }
 
-footer {
-   min-height: 50vh;
-   padding-top: 2.5rem;
-}
-
 header {
     padding: 3rem 0;
 }
 
 section {
     padding: 5rem 0;
+}
+
+button, .btn, .btn-schedule {
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-schedule {
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: var(--color-logaritmia-2);
+    width: 21rem;
+    padding: 1.5rem 3rem;
+    border: 2px solid var(--color-logaritmia-2);;
+    border-radius: 10px;
+}
+
+.btn-schedule:hover {
+    color: var(--color-logaritmia-2);
+    background-color: var(--logaritmia-white) !important;
 }
 
 .centre {
@@ -138,6 +230,10 @@ section {
     margin-bottom: 1em;
 }
 
+.page-title {
+    padding: 1rem 0;
+}
+
 .btn:hover {
     opacity: 1;
 }
@@ -169,3 +265,135 @@ section {
         max-width: 2000px;
     }
 }
+
+/****************************************
+*                                       *
+*                 Navbar                *
+*                                       *
+*****************************************/
+
+nav {
+    background-color: var(--color-logaritmia-1);
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.active-page {
+    text-decoration: underline;
+}
+
+.nav-grid {
+    display: flex;
+    justify-content: space-between;
+    height: var(--navbar-height);
+}
+
+nav a {
+    color: var(--logaritmia-white);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+a.btn-link {
+    display: block;
+    margin: 0 1rem;
+}
+
+nav .btn-link:hover {
+    text-decoration: underline;
+}
+
+#hamburguer-menu {
+    display: none;
+}
+
+#nav-schedule {
+    background-color: var(--color-logaritmia-4);
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+}
+
+#link-logo img {
+    box-sizing: border-box;
+    display: block;
+    height: var(--navbar-height);
+    width: auto;
+    padding: 0.5rem 0
+}
+
+@media screen and (max-width: 850px) {
+    nav {
+        position: fixed;
+    }
+
+    .nav-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0;
+    }
+    .nav-mobile-space {
+        height: var(--navbar-height);
+        display: block;
+    }
+
+    a.btn-link, #nav-schedule {
+        background-color: var(--color-logaritmia-1);
+        text-align: center;
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: 2px solid var(--logaritmia-white);
+        margin: 0;
+    }
+
+    #hamburguer-menu {
+        display: block;
+    }
+
+    #link-logo {
+        justify-content: space-between;
+    }
+
+    #nav-schedule {
+        background-color: var(--color-logaritmia-4);
+        border-radius: 0;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    #link-logo a, #link-logo label {
+        margin: 0 1rem;
+    }
+
+    #checkbox-menu:checked ~ #nav-links {
+        display: block;
+    }
+  }
+
+/****************************************
+*                                       *
+*                 Footer                *
+*                                       *
+*****************************************/
+
+footer {
+    background-color: var(--color-logaritmia-2);
+    min-height: 50vh;
+    padding-top: 2.5rem;
+ }
+
+ footer a {
+    margin: 0.5rem 1rem;
+ }
+
+ @media screen and (max-width: 410px) {
+    .site-map {
+        display: block;
+    }
+
+    .site-map a {
+        display: block;
+    }
+ }

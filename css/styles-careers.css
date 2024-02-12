@@ -1,0 +1,118 @@
+/****************************************
+*                                       *
+*                 Header                *
+*                                       *
+*****************************************/
+
+header {
+    background-image: url(../img/logaritmia/fondo_logaritmia.png);
+    height: calc(50vh - var(--navbar-height));
+    max-height: 100vw;
+    padding: 0;
+}
+
+h1 {
+    color: var(--color-logaritmia-4);
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    padding: 1rem;
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-container {
+    display: grid;
+    justify-content: left;
+}
+
+.text-container .paragraph {
+    margin-left: 0;
+}
+
+/****************************************
+*                                       *
+*                 Mission               *
+*                                       *
+*****************************************/
+
+#mission {
+    background-color: var(--color-logaritmia-1);
+}
+
+#mission h2 {
+    margin: 2rem 0;
+}
+
+#mission .flexbox {
+    align-items: stretch;
+}
+
+#mission .centre div {
+    width: 50%;
+}
+
+@media screen and (max-width: 730px) {
+    #mission .centre div {
+        width: 100%;
+    }
+}
+
+/****************************************
+*                                       *
+*                 Message               *
+*                                       *
+*****************************************/
+
+#message h2, #message h3 {
+    color: var(--color-logaritmia-1);
+    margin: 2rem auto;
+}
+
+#message h3 {
+    font-size: 1.5rem;
+}
+
+#message .link {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 490px) {
+    #message h3:nth-of-type(2) {
+        font-size: clamp(1rem, 6.5vw, 2rem);
+    }
+}
+
+/****************************************
+*                                       *
+*                 Numbers               *
+*                                       *
+*****************************************/
+
+.number-fact {
+    min-width: 200px;
+}
+
+.number-fact h3 {
+    margin: 1rem auto 0.5rem;
+}
+
+.number-fact p {
+    text-align: center;
+}
+
+.number-fact svg {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+#numeric-facts {
+    background-color: var(--color-logaritmia-1);
+}
+
+#numeric-facts h2 {
+    color: var(--color-logaritmia-4);
+    margin-bottom: 2rem;
+}
