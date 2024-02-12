@@ -100,3 +100,11 @@ header img {
 #gauss-galois {
     background-color: var(--color-logaritmia-3);
 }
+
+#social-responsibility {
+    background-color: var(--color-logaritmia-3);
+}
+
+#social-responsibility .paragraph {
+    font-size: 1.5rem;
+}
