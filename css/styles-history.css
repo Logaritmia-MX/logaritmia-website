@@ -1,34 +1,55 @@
 /****************************************
 *                                       *
+*                 Header                *
+*                                       *
+*****************************************/
+
+header {
+    background-color: var(--color-logaritmia-3);
+    padding: 0;
+}
+
+/****************************************
+*                                       *
 *                 History               *
 *                                       *
 *****************************************/
 
-h1 {
-    color: var(--color-logaritmia-3);
-    text-align: left;
-}
-
-#history img {
+.history-img {
     width: 30%;
     margin-left: 1.5rem;
+}
+
+.history-img p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+#history {
+    padding-top: 2rem;
 }
 
 #history .paragraph {
     color: var(--black-text);
 }
 
-#history .flexbox div {
+#history .flexbox .text-container {
     width: calc(70% - 1.5rem);
 }
 
 @media screen and (max-width: 870px) {
-    #history .flexbox div {
+    #history .flexbox .text-container {
         width: 100%;
     }
 
-    #history img {
+    .history-img {
         width: clamp(300px, 100%, var(--text-width));
+        margin: 0 auto;
+    }
+
+    .history-img img {
         margin-left: auto;
     }
 }
@@ -268,7 +289,7 @@ h1 {
     background-color: var(--color-logaritmia-5);
     border-color: var(--color-logaritmia-5);
     width: auto;
-    margin: 2rem auto;
+    margin: 4rem auto 2rem;
 }
 
 #social-impact .btn-schedule:hover {

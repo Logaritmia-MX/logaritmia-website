@@ -230,6 +230,10 @@ button, .btn, .btn-schedule {
     margin-bottom: 1em;
 }
 
+.page-title {
+    padding: 1rem 0;
+}
+
 .btn:hover {
     opacity: 1;
 }

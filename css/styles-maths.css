@@ -13,9 +13,8 @@ header img {
     margin: 0
 }
 
-.subject-title {
+.page-title {
     background-color: var(--color-logaritmia-5);
-    padding: 1rem 0;
 }
 
 .header-content {
