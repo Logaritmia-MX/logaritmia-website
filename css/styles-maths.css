@@ -4,15 +4,7 @@
 *                                       *
 *****************************************/
 
-h1 {
-    color: var(--color-logaritmia-5);
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    width: 70%;
-    z-index: 10;
-}
-
 header {
-    position: relative;
     padding: 0;
 }
 
@@ -21,23 +13,34 @@ header img {
     margin: 0
 }
 
+.subject-title {
+    background-color: var(--color-logaritmia-5);
+    padding: 1rem 0;
+}
+
 .header-content {
     justify-content: space-between;
+    position: relative;
+}
+
+.header-content h2 {
+    color: var(--color-logaritmia-5);
+    font-size: clamp(1.8rem, 4vw, 1.5rem);
+    width: 70%;
+    z-index: 10;
 }
 
 #diffused-background {
     position: absolute;
     width: 15%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0));
+    background-image: linear-gradient(to right, var(--logaritmia-white), rgba(0,0,0,0));
     right: 15%;
 }
 
 @media screen and (max-width: 635px) {
     h1 {
-        margin: 1rem auto;
-        font-size: 3rem;
-        width: auto;
+        font-size: 2rem;
     }
 
     header img {
@@ -48,6 +51,12 @@ header img {
     .header-content {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .header-content h2 {
+        margin: 1rem auto;
+        font-size: 1.5rem;
+        width: auto;
     }
 
     #diffused-background {
@@ -62,12 +71,11 @@ header img {
 *****************************************/
 
 #differentiator {
+    background-color: var(--color-logaritmia-3);
     padding: 3rem 0;
 }
 
 #differentiator h2 {
-    background-color: var(--color-logaritmia-3);
-    width: 50%;
     padding: 2rem;
 }
 
@@ -126,7 +134,6 @@ header img {
 
 #grades-content h3 {
     color: var(--black-text);
-    text-align: left;
 }
 
 /****************************************
