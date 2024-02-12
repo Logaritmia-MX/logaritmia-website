@@ -1,4 +1,39 @@
 @font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 100;
+    src: url(fonts/arima/Arima-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/gothic_a1/GothicA1-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/arima/Arima-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/arima/Arima-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/arima/Arima-Bold.ttf);
+}
+
+@font-face {
     font-family: 'Gothic';
     font-style: normal;
     font-weight: 100;
@@ -39,10 +74,11 @@
     --color-logaritmia-3: #adcf48;
     --color-logaritmia-4: #a448cf;
     --color-logaritmia-5: #cf4895;
+    --logaritmia-white: #faf2e9;
     --black: #191919;
-    --white-text: #fafafa;
+    --white-text: #faf2e9;
     --grey-text: #3d3d3d;
-    --black-text: rgba(0, 0, 0, 0.8);
+    --black-text: #272727;
     --text-width: 39rem;
     --navbar-height: 3rem;
 }
@@ -53,11 +89,16 @@
     font-weight: 300;
 }
 
+body {
+    background-color: var(--logaritmia-white);
+}
+
 html {
     font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arima', Arial, Helvetica, sans-serif;
     text-align: center;
     max-width: var(--text-width);
 }
@@ -140,7 +181,7 @@ button, .btn, .btn-schedule {
 
 .btn-schedule:hover {
     color: var(--color-logaritmia-2);
-    background-color: #fff !important;
+    background-color: var(--logaritmia-white) !important;
 }
 
 .centre {
@@ -234,6 +275,10 @@ nav {
     z-index: 100;
 }
 
+.active-page {
+    text-decoration: underline;
+}
+
 .nav-grid {
     display: flex;
     justify-content: space-between;
@@ -241,9 +286,9 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: var(--logaritmia-white);
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 a.btn-link {
@@ -293,7 +338,7 @@ nav .btn-link:hover {
         text-align: center;
         width: 100%;
         padding: 1rem 0;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid var(--logaritmia-white);
         margin: 0;
     }
 
