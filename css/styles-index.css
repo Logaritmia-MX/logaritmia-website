@@ -19,7 +19,7 @@ header {
 }
 
 .welcome-text-card {
-    background-color: #fff;
+    background-color: var(--logaritmia-white);
     box-sizing: border-box;
     width: 70%;
     min-width: 350px;
@@ -29,8 +29,8 @@ header {
     bottom: -4rem;
 }
 
-.welcome-container img {
-    height: 4rem;
+.welcome-text-card img {
+    height: 8rem;
     width: auto;
     margin-bottom: 1rem;
 }
@@ -52,13 +52,20 @@ header {
     color: var(--black-text);
 }
 
+@media screen and (max-width: 860px) {
+    .welcome-text-card img {
+        height: auto;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 735px) {
     .welcome-text-card .btn-schedule {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 590px) {
     header {
         margin-bottom: 25vh;
     }
@@ -84,6 +91,7 @@ header {
 
 .benefit-bullet h3 {
     text-align: left;
+    margin-left: 0;
 }
 
 .benefit-bullet svg {
@@ -207,8 +215,18 @@ header {
     padding-bottom: 2rem;
 }
 
+#methodology-step-4 p {
+    text-align: center;
+}
+
 #next-methodology-step img {
     transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+    #methodology-step-4 p {
+        text-align: justify;
+    }
 }
 
 /****************************************
