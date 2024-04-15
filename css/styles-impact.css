@@ -1,18 +1,16 @@
+/****************************************
+*                                       *
+*                 Header                *
+*                                       *
+*****************************************/
+
 header {
-    background-image: url(../img/impact/classroom.jpg);
-    background-size: cover;
-    background-position: 50% 100%;
-    height: calc(100vh - var(--navbar-height));
-    max-height: 100vw;
+    background-color: var(--logaritmia-white);
+    padding: 0;
 }
 
 h1 {
-    color: var(--color-logaritmia-1);
-    font-size: 5rem;
-}
-
-header img {
-    max-width: var(--text-width);
+    color: var(--black-text);
 }
 
 .two-columns {
@@ -77,6 +75,15 @@ header img {
 
 .project-titles div:nth-of-type(2) h2 {
     margin-left: 0;
+}
+
+#gauss-galois h3 {
+    text-align: center;
+}
+
+#gauss-galois video {
+    max-width: var(--text-width);
+    margin: 1rem auto 2rem;
 }
 
 @media screen and (min-width: 2016px) {
