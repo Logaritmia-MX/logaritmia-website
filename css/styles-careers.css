@@ -73,6 +73,11 @@ h1 {
     font-size: 1.5rem;
 }
 
+#message video {
+    max-width: var(--text-width);
+    margin: 0 auto 2rem;
+}
+
 #message .link {
     font-size: 1em;
 }

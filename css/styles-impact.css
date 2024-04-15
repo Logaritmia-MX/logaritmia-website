@@ -77,6 +77,15 @@ h1 {
     margin-left: 0;
 }
 
+#gauss-galois h3 {
+    text-align: center;
+}
+
+#gauss-galois video {
+    max-width: var(--text-width);
+    margin: 1rem auto 2rem;
+}
+
 @media screen and (min-width: 2016px) {
     .project-titles h2 {
         max-width: 1000px;
