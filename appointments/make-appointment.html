@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logaritmia MX</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="icon" type="image/png" href="../img/logaritmia/logo_logaritmia.png">
+    <link rel="stylesheet" type="text/css" href="../css/appointments/styles-make-appointment.css">
+  </head>
+  <body>
+    <nav>
+      <div class="centre nav-grid">
+        <input type="checkbox" class="hide" id="checkbox-menu">
+        <div id="link-logo" class="flexbox">
+          <a href="../index.html"><img src="../img/logaritmia/logo_logaritmia.png" alt="Logaritmia MX"></a>
+          <label for="checkbox-menu" id="hamburguer-menu">
+            <img src="../img/icons/menu.svg">
+          </label>
+        </div>
+        <div class="flexbox" id="nav-links">
+          <a class="btn-link" href="../maths.html">Matemáticas</a>
+          <a class="btn-link" href="../history.html">Historia</a>
+          <a class="btn-link" href="../impact.html">Impacto</a>
+          <a class="btn-link" href="../careers.html">Voluntarios</a>
+          <a class="btn-link" href="#" id="nav-schedule">Aprende más</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-mobile-space"></div>
+
+    <main>
+        <div class="centre content-card hide" id="select-date">
+            <h1>Agendar sesión informativa</h1>
+            <h2>Selecciona una fecha y hora</h2>
+            <div class="calendar-container flexbox">
+                <div id="calendar">
+                    <div class="month-head flexbox">
+                        <button type="button" id="btn-previous-month">
+                            <img src="../img/icons/left-arrow.svg" alt="Mes anterior">
+                        </button>
+                        <h5>Diciembre 2024</h5>
+                        <button type="button" id="btn-next-month">
+                          <img src="../img/icons/left-arrow.svg" alt="Mes siguiente">
+                      </button>
+                    </div>
+                    <h6 class="weekday">dom</h6>
+                    <h6 class="weekday">lun</h6>
+                    <h6 class="weekday">mar</h6>
+                    <h6 class="weekday">mié</h6>
+                    <h6 class="weekday">jue</h6>
+                    <h6 class="weekday">vie</h6>
+                    <h6 class="weekday">sáb</h6>
+                </div>
+                <div id="times-container">
+                  <!-- <input type="radio" name="time-button" class="available-time" id="1">
+                  <label for="1" class="available-time">9:00</label> -->
+                </div>
+            </div>
+            <form action="" id="form-select-time">
+              <div class="submit-btns-container flexbox">
+                <button type="submit" id="btn-confirm-time" class="form-button">Siguiente</button>
+              </div>
+            </form>
+        </div>
+
+        <div class="centre content-card hide" id="contact-data">
+          <h1>Datos de contacto</h1>
+          <form action="" id="form-contact-data">
+            <div class="input-container flexbox">
+              <div class="data-input">
+                <label for="student-name-input">Nombre del estudiante</label>
+                <input type="text" id="student-name-input" name="student-name" placeholder="Nombre">
+              </div>
+              <div class="data-input">
+                <label for="school-year-input">Grado académico</label>
+                <select name="school-year" id="school-year-input">
+                  <option value="">Grado académico</option>
+                  <option value="primaria-baja">Primaria baja</option>
+                  <option value="primaria-alta">Primaria alta</option>
+                  <option value="secundaria">Secundaria</option>
+                  <option value="preparatoria">Preparatoria</option>
+                </select>
+              </div>
+              <div class="data-input">
+                <label for="interest-topic-input">Tema de interés</label>
+                <select name="interest-topic" id="interest-topic-input">
+                  <option value="">Tema de interés</option>
+                  <option value="fracciones">Fracciones</option>
+                  <option value="algebra">Álgebra</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-container flexbox">
+              <div class="data-input">
+                <label for="guardian-name-input">Nombre del tutor</label>
+                <input type="text" id="guardian-name-input" name="guardian-name" placeholder="Nombre">
+              </div>
+              <div class="data-input">
+                <label for="guardian-mail-input">Correo del tutor</label>
+                <input type="email" id="guardian-mail-input" name="guardian-mail" placeholder="Correo">
+              </div>
+              <div class="data-input">
+                <label for="guardian-telephone-input">Teléfono del tutor</label>
+                <input type="tel" id="guardian-telephone-input" name="guardian-telephone" placeholder="Teléfono">
+              </div>
+            </div>
+            <div class="input-container flexbox">
+              <div class="data-input comments-card">
+                <label for="comments-input">Comentarios</label>
+                <textarea name="comments" id="comments-input"></textarea>
+              </div>
+            </div>
+            <div class="submit-btns-container flexbox">
+              <button type="button" class="form-button">Regresar</button>
+              <button type="submit" class="form-button">Siguiente</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="centre content-card hide" id="confirm-appointment">
+          <h1>Confirmar sesión informativa</h1>
+          <div id="appointment-data">
+            <p class="paragraph">Se agendará su cita el día miércoles 24 de enero de 2024 a las 17:00 hrs</p>
+            <h6>Datos del alumno</h6>
+            <p class="paragraph">Juan Perez</p>
+            <p class="paragraph">Secundaria</p>
+            <h6>Datos de contacto</h6>
+            <p class="paragraph">Alicia Perez</p>
+            <p class="paragraph">alicia@mail.com</p>
+            <p class="paragraph">5512345678</p>
+          </div>
+          <form action="">
+            <div class="submit-btns-container flexbox">
+              <button type="button" class="form-button">Regresar</button>
+              <button type="submit" class="form-button">Siguiente</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="centre content-card flexbox hide" id="appointment-status">
+          <div>
+            <h2>Gracias</h2>
+            <p class="paragraph">En breve recibirás un correo de confirmación con los datos de tu cita</p>
+          </div>
+        </div>
+
+    </main>
+
+    <footer>
+      <div class="centre flexbox site-map">
+        <a href="../index.html">Inicio</a>
+        <a href="../maths.html">Matemáticas</a>
+        <a href="../history.html">Historia</a>
+        <a href="../impact.html">Impacto</a>
+        <a href="../careers.html">Voluntarios</a>
+        <a href="#">Sesiones informativas</a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/appointments/script-config.js" charset="utf-8"></script>
+    <script src="../js/appointments/script-make-appointment.js" charset="utf-8"></script>
+    <!-- Scripts -->
+  </body>
+</html>

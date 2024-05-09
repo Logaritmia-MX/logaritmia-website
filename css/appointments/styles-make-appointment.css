@@ -1,0 +1,192 @@
+h1, h2 {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-family: 'Gothic';
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    background-color: var(--color-logaritmia-3);
+}
+
+.content-card {
+    background-color: var(--logaritmia-white);
+    padding: 2rem;
+}
+
+.submit-btns-container {
+    justify-content: center;
+}
+
+#appointment-data, #form-contact-data, .calendar-container {
+    border-top: 1px solid var(--black-text);
+    padding: 1rem;
+}
+
+.content-card * {
+    color: var(--black-text);
+}
+
+.submit-btns-container button {
+    margin: 0 1rem;
+}
+
+button.form-button {
+    color: var(--white-text);
+    padding: 0.5rem 3.5rem;
+    margin-top: 2rem;
+}
+
+button.form-button:hover {
+    color: var(--color-logaritmia-2);
+}
+
+/****************************************
+*                                       *
+*               select-date             *
+*                                       *
+*****************************************/
+
+.calendar-container {
+    align-items: start;
+    justify-content: space-between;
+}
+
+.calendar-day {
+    height: 2rem;
+}
+
+.calendar-container:hover {
+    cursor: pointer;
+}
+
+.month-head {
+    grid-area: 1 / 1 / 2 / 8;
+}
+
+.unavailable-day {
+    opacity: 0.5;
+}
+
+.unavailable-day:hover {
+    cursor: default;
+}
+
+.calendar-day p {
+    text-align: right;
+}
+
+.month-head button {
+    background-color: var(--color-logaritmia-2);
+    width: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+input.available-time {
+    display: none;
+}
+
+label.available-time {
+    background-color: var(--logaritmia-white);
+    text-align: center;
+    width: 100%;
+    border: 1px solid var(--black-text);
+    padding: 0.3rem 0;
+}
+
+label.available-time:hover, input:checked + label.available-time {
+    background-color: var(--color-logaritmia-2);
+    border-color: var(--color-logaritmia-2);
+    color: var(--logaritmia-white);
+}
+
+#btn-confirm-time:hover {
+    color: var(--color-logaritmia-2);
+}
+
+#calendar, #times-container {
+    width: 45%;
+}
+
+#calendar {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(7, 1fr);
+    width: 50%;
+}
+
+#times-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+#btn-next-month {
+    transform: rotate(180deg);
+}
+
+/****************************************
+*                                       *
+*               contact-data            *
+*                                       *
+*****************************************/
+
+.input-container {
+    justify-content: space-between;
+    margin: 1rem auto;
+    margin-left: 1rem;
+}
+
+.input-container label {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.input-container div {
+    width: 30%;
+}
+
+div.comments-card {
+    width: 65%;
+}
+
+.input-container input, .input-container select, .input-container textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/****************************************
+*                                       *
+*           confirm-appointment         *
+*                                       *
+*****************************************/
+
+#appointment-data .paragraph {
+    text-align: center;
+}
+
+/****************************************
+*                                       *
+*           appointment-status          *
+*                                       *
+*****************************************/
+
+#appointment-status {
+    min-height: 40vh;
+}
+#appointment-status h2 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+}
