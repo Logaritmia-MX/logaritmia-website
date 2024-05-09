@@ -74,7 +74,7 @@
     --color-logaritmia-3: #adcf48;
     --color-logaritmia-4: #a448cf;
     --color-logaritmia-5: #cf4895;
-    --logaritmia-white: #faf2e9;
+    --logaritmia-white: #fff;
     --black: #191919;
     --white-text: #faf2e9;
     --grey-text: #3d3d3d;
@@ -157,15 +157,19 @@ header {
     padding: 3rem 0;
 }
 
-section {
+main, section {
     padding: 5rem 0;
 }
 
 button, .btn, .btn-schedule {
+    color: var(--logaritmia-white);
+    background-color: var(--color-logaritmia-2);
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
     display: block;
+    border: 1px solid var(--color-logaritmia-2);
+    border-radius: 1px;
     margin: 0 auto;
 }
 
@@ -179,7 +183,7 @@ button, .btn, .btn-schedule {
     border-radius: 10px;
 }
 
-.btn-schedule:hover {
+button:hover, .btn:hover, .btn-schedule:hover {
     color: var(--color-logaritmia-2);
     background-color: var(--logaritmia-white) !important;
 }
