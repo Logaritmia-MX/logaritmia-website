@@ -384,9 +384,18 @@ footer {
     padding-top: 2.5rem;
  }
 
- footer a {
+footer a {
     margin: 0.5rem 1rem;
- }
+}
+
+#contact-mail {
+    color: var(--white-text);
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+    margin-top: 3rem;
+}
 
  @media screen and (max-width: 410px) {
     .site-map {

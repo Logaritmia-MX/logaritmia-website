@@ -239,3 +239,40 @@ header {
     color: var(--color-logaritmia-1);
     margin-bottom: 3rem;
 }
+
+/****************************************
+*                                       *
+*              Contact card             *
+*                                       *
+*****************************************/
+
+#contact-card a {
+    text-align: center;
+    display: block;
+}
+
+#contact-card .card {
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 3px 8px #777;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+#contact-card h3 {
+    color: var(--color-logaritmia-1);
+    margin-bottom: 1.5rem;
+}
+
+#contact-card img {
+    background-color: #fafafa;
+    width: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+    #contact-card .card {
+        box-shadow: none;
+        width: 100%;
+    }
+}
