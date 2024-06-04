@@ -62,6 +62,7 @@
             </div>
             <form action="" id="form-select-time">
               <div class="submit-btns-container flexbox">
+                <p class="error hide">Seleccione un horario</p>
                 <button type="submit" id="btn-confirm-time" class="form-button">Siguiente</button>
               </div>
             </form>
@@ -72,11 +73,15 @@
           <form action="" id="form-contact-data">
             <div class="input-container flexbox">
               <div class="data-input">
-                <label for="student-name-input">Nombre del estudiante</label>
+                <label for="student-name-input">Nombre del estudiante<span>*</span></label>
                 <input type="text" id="student-name-input" name="student-name" placeholder="Nombre">
               </div>
               <div class="data-input">
-                <label for="school-year-input">Grado académico</label>
+                <label for="student-surname-input">Apellido del estudiante<span>*</span></label>
+                <input type="text" id="student-surname-input" name="student-surname" placeholder="Apellido">
+              </div>
+              <div class="data-input">
+                <label for="school-year-input">Grado académico<span>*</span></label>
                 <select name="school-year" id="school-year-input">
                   <option value="">Grado académico</option>
                   <option value="primaria-baja">Primaria baja</option>
@@ -86,7 +91,7 @@
                 </select>
               </div>
               <div class="data-input">
-                <label for="interest-topic-input">Tema de interés</label>
+                <label for="interest-topic-input">Tema de interés<span>*</span></label>
                 <select name="interest-topic" id="interest-topic-input">
                   <option value="">Tema de interés</option>
                   <option value="fracciones">Fracciones</option>
@@ -96,15 +101,15 @@
             </div>
             <div class="input-container flexbox">
               <div class="data-input">
-                <label for="guardian-name-input">Nombre del tutor</label>
+                <label for="guardian-name-input">Nombre del tutor<span>*</span></label>
                 <input type="text" id="guardian-name-input" name="guardian-name" placeholder="Nombre">
               </div>
               <div class="data-input">
-                <label for="guardian-mail-input">Correo del tutor</label>
+                <label for="guardian-mail-input">Correo del tutor<span>*</span></label>
                 <input type="email" id="guardian-mail-input" name="guardian-mail" placeholder="Correo">
               </div>
               <div class="data-input">
-                <label for="guardian-telephone-input">Teléfono del tutor</label>
+                <label for="guardian-telephone-input">Teléfono del tutor<span>*</span></label>
                 <input type="tel" id="guardian-telephone-input" name="guardian-telephone" placeholder="Teléfono">
               </div>
             </div>
@@ -115,7 +120,8 @@
               </div>
             </div>
             <div class="submit-btns-container flexbox">
-              <button type="button" class="form-button">Regresar</button>
+              <p class="error hide">Complete los campos obligatorios</p>
+              <button type="button" class="form-button" id="return-from-contact-data">Regresar</button>
               <button type="submit" class="form-button">Siguiente</button>
             </div>
           </form>
@@ -133,9 +139,9 @@
             <p class="paragraph">alicia@mail.com</p>
             <p class="paragraph">5512345678</p>
           </div>
-          <form action="">
+          <form action="" id="form-confirm-appointment">
             <div class="submit-btns-container flexbox">
-              <button type="button" class="form-button">Regresar</button>
+              <button type="button" class="form-button" id="return-from-confirm-appointment">Regresar</button>
               <button type="submit" class="form-button">Siguiente</button>
             </div>
           </form>
