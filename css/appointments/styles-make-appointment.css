@@ -197,12 +197,47 @@ div.comments-card {
 *                                       *
 *****************************************/
 
-#appointment-status {
+#appointment-status-success, #appointment-status-fail {
     min-height: 40vh;
 }
-#appointment-status h2 {
+
+#appointment-status-success h2, #appointment-status-fail h2 {
     font-size: 2rem;
     width: 100%;
     text-align: center;
     margin: 2rem auto;
+}
+
+#appointment-status-fail h2 {
+    color: #f00;
+}
+
+/****************************************
+*                                       *
+*                 loading               *
+*                                       *
+*****************************************/
+
+.lds-dual-ring {
+    box-sizing: border-box;
+    width: 5rem;
+    height: 5rem;
+    border: 0.4rem solid var(--color-logaritmia-2);
+    border-color: var(--color-logaritmia-2) transparent var(--color-logaritmia-2) transparent;
+    border-radius: 50%;
+    animation: lds-dual-ring 3s linear infinite;
+}
+
+#loading .flexbox {
+    height: 50vw;
+    max-height: 50vh;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

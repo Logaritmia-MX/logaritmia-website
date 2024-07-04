@@ -138,6 +138,7 @@
             <p class="paragraph">Alicia Perez</p>
             <p class="paragraph">alicia@mail.com</p>
             <p class="paragraph">5512345678</p>
+            <p class="paragraph">Los comentarios</p>
           </div>
           <form action="" id="form-confirm-appointment">
             <div class="submit-btns-container flexbox">
@@ -147,11 +148,19 @@
           </form>
         </div>
 
-        <div class="centre content-card flexbox hide" id="appointment-status">
+        <div class="centre content-card hide" id="loading">
+          <div class="flexbox"><div class="lds-dual-ring"></div></div>
+        </div>
+
+        <div class="centre content-card flexbox hide" id="appointment-status-success">
           <div>
             <h2>Gracias</h2>
             <p class="paragraph">En breve recibirás un correo de confirmación con los datos de tu cita</p>
           </div>
+        </div>
+
+        <div class="centre content-card hide" id="appointment-status-fail">
+          <h2>Ha ocurrido un error</h2>
         </div>
 
     </main>

@@ -22,15 +22,19 @@ const handleSubmitAppointmentTime = e => {
 
 const handleSubmitConfirmAppointment = async e => {
     e.preventDefault()
-    const RESERVE_URL = `${API_URL}/appointments/${selectedAppointment}`
+    navigateToTab(3, tabs)
+    const RESERVE_URL = `${API_URL}/appointments/book/${selectedAppointment}`
     const requestOptions = {
-        method: 'PUT',
+        method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(reservationBody)
     }
     const response = await fetch(RESERVE_URL, requestOptions)
     console.log(response);
-    navigateToTab(3, tabs)
+    if (response.status == 200)
+        navigateToTab(4, tabs)
+    else
+        navigateToTab(5, tabs)
 }
 
 const handleSubmitStudentData = e => {
@@ -40,6 +44,7 @@ const handleSubmitStudentData = e => {
     reservationBody.student.surname = formData.get('student-surname')
     reservationBody.student.grade = formData.get('school-year')
     reservationBody.student.topics = [formData.get('interest-topic')]
+    reservationBody.comments = formData.get('comments')
     reservationBody.tutor.name = formData.get('guardian-name')
     reservationBody.tutor.telephone = formData.get('guardian-telephone')
     reservationBody.tutor.email = formData.get('guardian-mail')
@@ -55,7 +60,7 @@ const handleSubmitStudentData = e => {
     paragraphs[3].innerText = reservationBody.tutor.name
     paragraphs[4].innerText = reservationBody.tutor.email
     paragraphs[5].innerText = reservationBody.tutor.telephone
-    reservationBody.comments = formData.get('comments')
+    paragraphs[6].innerText = reservationBody.comments
     navigateToTab(2, tabs)
 }
 
@@ -119,7 +124,7 @@ const navigateToTab = (tabIndex, tabs) => {
 const fetchAvailableAppointments = async () => {
     let aux
     try {
-        const response = await fetch(`${API_URL}/appointments/available`)
+        const response = await fetch(`${API_URL}/appointments/available/`)
         aux = await response.json()
     } catch (error) {
         console.error(error)
@@ -166,7 +171,9 @@ const tabs = [
     document.getElementById('select-date'),
     document.getElementById('contact-data'),
     document.getElementById('confirm-appointment'),
-    document.getElementById('appointment-status'),
+    document.getElementById('loading'),
+    document.getElementById('appointment-status-success'),
+    document.getElementById('appointment-status-fail'),
 ]
 const shortTimeFormatter = new Intl.DateTimeFormat("en", {
     timeStyle: "short",
